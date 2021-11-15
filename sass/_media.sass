@@ -6,6 +6,37 @@
     height: 100vh
     min-height: unset
 
+@media (max-width: 1135px)
+  .stages-list
+    &_item
+      margin-right: 15px
+    &_number
+      &::after
+        width: 234px
+      &--last::after
+        width: 0
+    &_text
+      font-size: 18px
+      line-height: 23px
+
+@media (max-width: 1027px)
+  .stages-list
+    &_number
+      &::after
+        width: 197px
+      &--last::after
+        width: 0
+
+@media (max-width: 876px)
+  .stages-list
+    flex-wrap: wrap
+    justify-content: space-around
+    &_item
+      margin-bottom: 20px
+    &_number
+      &::after
+        width: 0
+
 @media (max-width: 768px)
   .button
     font-size: 14px
@@ -13,7 +44,6 @@
   .main
     &-content
       &_title
-        margin-top: 65px
         margin-bottom: 40px
         font-size: 35px
         line-height: 45px
@@ -31,10 +61,14 @@
       height: 75px
 
 @media (max-width: 683px)
+  h2
+    font-size: 35px
+    line-height: 45px
   .button
     font-size: 12px
     line-height: 16px
   .main
+    height: 450px
     &-content
       &_title
         margin-top: 55px
@@ -51,6 +85,15 @@
       height: 40px
     &_ormo
       height: 55px
+  .stages
+    margin-top: 50px
+    &-list
+      &_number
+        margin-bottom: 20px
+        width: 30px
+        height: 30px
+        font-size: 18px
+        line-height: 23px
 
 @media (max-width: 576px)
   .container
@@ -58,7 +101,7 @@
     margin-left: auto
     width: 91%
   .main
-    background-position: center, center
+    height: 400px
     &-content
       &_title
         margin-top: 45px
@@ -74,8 +117,31 @@
         height: 50px
 
 @media (max-width: 460px)
+  h2
+    margin-bottom: 35px
+    font-size: 25px
+    line-height: 32px
   .main
     height: 350px
+  .stages
+    margin-top: 40px
+    &-list
+      &_item
+        margin-right: 0
+        margin-bottom: 15px
+      &_number
+        margin-bottom: 15px
+        font-size: 14px
+        line-height: 18px
+        width: 25px
+        height: 25px
+      &_title
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 15px
+      &_text
+        font-size: 16px
+        line-height: 21px
 
 @media (max-width: 320px)
   .logo

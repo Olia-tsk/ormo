@@ -521,6 +521,7 @@ h2 {
   border: 2px solid #FF5A5A;
   border-radius: 50%;
   color: #FF5A5A;
+  background-color: #fff;
   font-size: 20px;
   line-height: 26px;
 }
@@ -783,13 +784,52 @@ h2 {
   }
 }
 
+@media (max-width: 1135px) {
+  .stages-list_item {
+    margin-right: 15px;
+  }
+  .stages-list_number::after {
+    width: 234px;
+  }
+  .stages-list_number--last::after {
+    width: 0;
+  }
+  .stages-list_text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 1027px) {
+  .stages-list_number::after {
+    width: 197px;
+  }
+  .stages-list_number--last::after {
+    width: 0;
+  }
+}
+
+@media (max-width: 876px) {
+  .stages-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .stages-list_item {
+    margin-bottom: 20px;
+  }
+  .stages-list_number::after {
+    width: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .button {
     font-size: 14px;
     line-height: 18px;
   }
   .main-content_title {
-    margin-top: 65px;
     margin-bottom: 40px;
     font-size: 35px;
     line-height: 45px;
@@ -812,9 +852,16 @@ h2 {
 }
 
 @media (max-width: 683px) {
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
   .button {
     font-size: 12px;
     line-height: 16px;
+  }
+  .main {
+    height: 450px;
   }
   .main-content_title {
     margin-top: 55px;
@@ -835,6 +882,16 @@ h2 {
   .logo-image_ormo {
     height: 55px;
   }
+  .stages {
+    margin-top: 50px;
+  }
+  .stages-list_number {
+    margin-bottom: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -844,7 +901,7 @@ h2 {
     width: 91%;
   }
   .main {
-    background-position: center, center;
+    height: 400px;
   }
   .main-content_title {
     margin-top: 45px;
@@ -863,8 +920,36 @@ h2 {
 }
 
 @media (max-width: 460px) {
+  h2 {
+    margin-bottom: 35px;
+    font-size: 25px;
+    line-height: 32px;
+  }
   .main {
     height: 350px;
+  }
+  .stages {
+    margin-top: 40px;
+  }
+  .stages-list_item {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .stages-list_number {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    width: 25px;
+    height: 25px;
+  }
+  .stages-list_title {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .stages-list_text {
+    font-size: 16px;
+    line-height: 21px;
   }
 }
 
