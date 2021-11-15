@@ -1,0 +1,17 @@
+.button
+  &:hover
+    background: linear-gradient(0deg, #FF5A5A 100%)
+
+.footer-contacts a
+  &:hover
+    text-decoration: underline
+
+// отключаем эффекты на планшетах
+@media (max-width: 780px)
+  .button
+    &:hover
+      background: linear-gradient(94.52deg, #FDBF43 0%, #FF5A5A 87.85%)
+
+  .footer-contacts a
+    &:hover
+      text-decoration: none

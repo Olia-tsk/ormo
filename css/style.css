@@ -369,6 +369,15 @@ template {
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: 'PT Sans', sans-serif;
   color: #000;
@@ -415,7 +424,7 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(94.52deg, #FDBF43 0%, #FF5A5A 87.85%), #FFFFFF;
+  background: linear-gradient(94.52deg, #FDBF43 0%, #FF5A5A 87.85%);
   border: none;
   height: 80px;
   width: 407px;
@@ -742,5 +751,23 @@ h2 {
 .footer-contacts_icon {
   width: 16px;
   margin-right: 10px;
+}
+
+.button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, to(#FF5A5A));
+  background: linear-gradient(0deg, #FF5A5A 100%);
+}
+
+.footer-contacts a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 780px) {
+  .button:hover {
+    background: linear-gradient(94.52deg, #FDBF43 0%, #FF5A5A 87.85%);
+  }
+  .footer-contacts a:hover {
+    text-decoration: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
