@@ -570,12 +570,17 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  margin-bottom: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.bonuses-list_text {
+  margin-bottom: 0;
 }
 
 .bonuses-list_icon {
@@ -892,6 +897,9 @@ h2 {
     font-size: 18px;
     line-height: 23px;
   }
+  .bonuses {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -917,6 +925,21 @@ h2 {
   .logo-image_ormo {
     height: 50px;
   }
+  .bonuses-text {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .bonuses-list_item {
+    margin-bottom: 20px;
+  }
+  .bonuses-list_icon {
+    width: 40px;
+  }
+  .bonuses-list_text {
+    font-size: 18px;
+    line-height: 23px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -930,6 +953,9 @@ h2 {
   }
   .stages {
     margin-top: 40px;
+  }
+  .stages-list {
+    margin-bottom: 0;
   }
   .stages-list_item {
     margin-right: 0;
@@ -948,6 +974,21 @@ h2 {
     margin-bottom: 15px;
   }
   .stages-list_text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .bonuses {
+    margin-top: 40px;
+  }
+  .bonuses-text {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+  .bonuses-list_item {
+    margin-bottom: 15px;
+  }
+  .bonuses-list_text {
     font-size: 16px;
     line-height: 21px;
   }
