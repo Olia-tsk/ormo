@@ -546,6 +546,10 @@ h2 {
   display: inline;
 }
 
+.bonuses {
+  margin-top: 70px;
+}
+
 .bonuses-text {
   text-align: center;
   margin-bottom: 30px;
@@ -566,5 +570,61 @@ h2 {
 .bonuses-list_icon {
   width: 44px;
   padding-right: 15px;
+}
+
+.subject {
+  margin-top: 70px;
+}
+
+.subject-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 915px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subject-list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.subject-list_icon {
+  height: 126px;
+}
+
+.subject-text {
+  font-size: 18px;
+  line-height: 23px;
+  font-style: italic;
+  text-align: center;
+}
+
+.apply {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.apply-button {
+  text-transform: uppercase;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*# sourceMappingURL=style.css.map */
