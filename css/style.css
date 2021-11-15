@@ -693,4 +693,14 @@ h2 {
 .order-item_img--stage2 {
   margin-right: 15px;
 }
+
+.materials {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.materials-button {
+  margin-right: auto;
+  margin-left: auto;
+}
 /*# sourceMappingURL=style.css.map */
