@@ -703,4 +703,44 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  background-color: #005BAA;
+  background-image: url("../img/footer_bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer-title {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-contacts {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer-contacts a {
+  color: #fff;
+}
+
+.footer-contacts_icon {
+  width: 16px;
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */
