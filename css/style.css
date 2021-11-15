@@ -627,4 +627,70 @@ h2 {
   margin-right: auto;
   margin-left: auto;
 }
+
+.order-text {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+}
+
+.order-item {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 698px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.order-item_desc {
+  width: 359px;
+  text-align: center;
+}
+
+.order-item_desc--stage1 {
+  width: 291px;
+}
+
+.order-item_title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.order-item_title--bold {
+  font-weight: bold;
+}
+
+.order-item_dates {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.order-item_text {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.order-item_img {
+  width: 300px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.order-item_img--stage1 {
+  margin-left: 15px;
+}
+
+.order-item_img--stage2 {
+  margin-right: 15px;
+}
 /*# sourceMappingURL=style.css.map */
