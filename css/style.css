@@ -862,6 +862,14 @@ h2 {
   }
 }
 
+@media (max-width: 460px) {
+  .main-content_title {
+    margin-top: 120px;
+    font-size: 25px;
+    line-height: 32px;
+  }
+}
+
 @media (max-width: 320px) {
   .logo-wrapper {
     -ms-flex-wrap: wrap;
