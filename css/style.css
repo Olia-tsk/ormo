@@ -827,6 +827,17 @@ h2 {
   .stages-list_number::after {
     width: 0;
   }
+  .subject-list_icon {
+    height: 90px;
+  }
+  .subject-list_text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .subject-text {
+    font-size: 16px;
+    line-height: 21px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -900,6 +911,12 @@ h2 {
   .bonuses {
     margin-top: 50px;
   }
+  .subject {
+    margin-top: 50px;
+  }
+  .subject-list_icon {
+    height: 50px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -939,6 +956,19 @@ h2 {
   .bonuses-list_text {
     font-size: 18px;
     line-height: 23px;
+  }
+  .subject-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .subject-list_text {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .subject-text {
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -992,6 +1022,18 @@ h2 {
     font-size: 16px;
     line-height: 21px;
   }
+  .subject {
+    margin-top: 40px;
+  }
+  .subject-list {
+    margin-bottom: 15px;
+  }
+  .subject-list_item {
+    margin-bottom: 20px;
+  }
+  .subject-list_icon {
+    height: 40px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1006,6 +1048,11 @@ h2 {
   }
   .logo-image_ormo {
     height: 40px;
+  }
+  .subject-list_item {
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=style.css.map */
