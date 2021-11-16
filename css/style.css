@@ -812,6 +812,14 @@ h2 {
   .stages-list_number--last::after {
     width: 0;
   }
+  .apply-button {
+    width: 350px;
+    height: 70px;
+  }
+  .materials-button {
+    width: 350px;
+    height: 70px;
+  }
 }
 
 @media (max-width: 876px) {
@@ -865,6 +873,14 @@ h2 {
   .logo-image_ormo {
     height: 75px;
   }
+  .apply-button {
+    width: 225px;
+    height: 50px;
+  }
+  .materials-button {
+    width: 225px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 683px) {
@@ -911,11 +927,42 @@ h2 {
   .bonuses {
     margin-top: 50px;
   }
+  .bonuses-text {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  .bonuses-list_item {
+    margin-bottom: 20px;
+  }
+  .bonuses-list_icon {
+    width: 40px;
+  }
+  .bonuses-list_text {
+    font-size: 18px;
+    line-height: 23px;
+  }
   .subject {
     margin-top: 50px;
   }
   .subject-list_icon {
     height: 50px;
+  }
+  .apply {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .apply-button {
+    height: 40px;
+    width: 195px;
+  }
+  .materials {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .materials-button {
+    height: 40px;
+    width: 195px;
   }
 }
 
@@ -941,21 +988,6 @@ h2 {
   }
   .logo-image_ormo {
     height: 50px;
-  }
-  .bonuses-text {
-    font-size: 18px;
-    line-height: 23px;
-    margin-bottom: 20px;
-  }
-  .bonuses-list_item {
-    margin-bottom: 20px;
-  }
-  .bonuses-list_icon {
-    width: 40px;
-  }
-  .bonuses-list_text {
-    font-size: 18px;
-    line-height: 23px;
   }
   .subject-list {
     -webkit-box-pack: center;
@@ -1033,6 +1065,14 @@ h2 {
   }
   .subject-list_icon {
     height: 40px;
+  }
+  .apply {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .materials {
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
 }
 
