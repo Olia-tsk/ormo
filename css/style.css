@@ -442,7 +442,6 @@ h2 {
   background-position: center, left;
   background-size: cover, cover;
   height: 100vh;
-  min-height: 823px;
 }
 
 .main-content {
@@ -785,7 +784,6 @@ h2 {
   }
   .main {
     height: 100vh;
-    min-height: unset;
   }
 }
 
@@ -935,9 +933,6 @@ h2 {
     font-size: 12px;
     line-height: 16px;
   }
-  .main {
-    height: 450px;
-  }
   .main-content_title {
     margin-top: 55px;
     font-size: 25px;
@@ -1036,12 +1031,41 @@ h2 {
     width: 91%;
   }
   .main {
-    height: 400px;
+    background-position: center, center;
+  }
+  .main-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 70vh;
+    text-align: center;
   }
   .main-content_title {
     margin-top: 45px;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+  .main-content_text {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 50px;
+  }
+  .main-button {
+    width: 210px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .logo-wrapper {
     padding-top: 20px;
@@ -1099,8 +1123,13 @@ h2 {
     font-size: 25px;
     line-height: 32px;
   }
-  .main {
-    height: 350px;
+  .main-content_title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .main-content_text {
+    font-size: 16px;
+    line-height: 21px;
   }
   .stages {
     margin-top: 40px;
@@ -1200,6 +1229,12 @@ h2 {
 }
 
 @media (max-width: 320px) {
+  .main-button {
+    width: 185px;
+    height: 35px;
+    font-size: 12px;
+    line-height: 16px;
+  }
   .logo-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

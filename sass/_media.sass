@@ -4,7 +4,7 @@
     margin-right: 40px
   .main
     height: 100vh
-    min-height: unset
+    //min-height: unset
 
 @media (max-width: 1135px)
   .stages-list
@@ -131,7 +131,7 @@
     font-size: 12px
     line-height: 16px
   .main
-    height: 450px
+    //height: 450px
     &-content
       &_title
         margin-top: 55px
@@ -212,12 +212,29 @@
     margin-left: auto
     width: 91%
   .main
-    height: 400px
+    background-position: center, center
+    //height: 400px
     &-content
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      height: 70vh
+      text-align: center
       &_title
         margin-top: 45px
-        font-size: 20px
-        line-height: 26px
+        font-size: 35px
+        line-height: 45px
+        margin-bottom: 50px
+      &_text
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 50px
+    &-button
+      width: 210px
+      height: 40px
+      font-size: 14px
+      line-height: 18px
   .logo
     &-wrapper
       padding-top: 20px
@@ -258,7 +275,14 @@
     font-size: 25px
     line-height: 32px
   .main
-    height: 350px
+    //height: 350px
+    &-content
+      &_title
+        font-size: 30px
+        line-height: 39px
+      &_text
+        font-size: 16px
+        line-height: 21px
   .stages
     margin-top: 40px
     &-list
@@ -334,6 +358,12 @@
       line-height: 16px
 
 @media (max-width: 320px)
+  .main
+    &-button
+      width: 185px
+      height: 35px
+      font-size: 12px
+      line-height: 16px
   .logo
     &-wrapper
       flex-wrap: wrap
