@@ -1,0 +1,160 @@
+.modal
+  position: fixed
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  overflow: hidden
+  overflow-y: auto
+  -webkit-overflow-scrolling: touch
+  display: flex
+  flex-flow: column nowrap
+  justify-content: flex-start
+  align-items: center
+  z-index: 99
+  margin: 30px 0
+
+  &--active
+    visibility: visible
+    .modal-window
+      transform: scale(1)
+      opacity: 1
+
+  &-wrap
+    flex-shrink: 0
+
+  &-window
+    margin-top: 15px
+    padding: 30px
+    background: #fff
+    width: 550px
+    min-width: 100%
+    transition: transform 0.15s ease 0s, opacity 0.15s ease 0s
+    transform: scale(1)
+
+  &-close img
+    position: absolute
+    top: 10px
+    right: 10px
+    width: 20px
+
+  &-header
+    margin: 0
+    margin-bottom: 20px
+    font-size: 24px
+    line-height: 31px
+    font-weight: bold
+    text-align: center
+
+  &-form
+    &_field
+      margin-bottom: 20px
+      & input
+        width: 100%
+    &_group
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      margin-bottom: 0
+    &_item
+      display: flex
+      width: 48%
+      margin-bottom: 20px
+      & select, input
+        width: 100%
+
+    &_check
+      position: absolute
+      z-index: -1
+      opacity: 0
+      &:checked+label
+        &::before
+          border-color: #E4d0ff
+          background-color: #f7f4fb
+          background-image: url('../img/icon-check.png')
+
+    &_subjects
+      display: flex
+      flex-wrap: wrap
+      margin: 0
+      margin-bottom: 20px
+      &-item
+        margin-bottom: 20px
+        width: 50%
+        display: flex
+        align-items: center
+        font-size: 16px
+        line-height: 21px
+      &-title
+        font-size: 18px
+        line-height: 23px
+        font-weight: bold
+        margin: 0
+        margin-bottom: 5px
+      &-hint
+        margin: 0
+        margin-bottom: 20px
+        font-size: 14px
+        line-height: 18px
+    &_subject
+      display: flex
+      &::before
+        content: ''
+        display: inline-block
+        flex-shrink: 0
+        flex-grow: 0
+        margin-right: 15px
+        width: 20px
+        height: 20px
+        border-radius: 3px
+        border: 1px solid #E4d0ff
+        background-repeat: no-repeat
+        background-position: center center
+        background-size: 70% 70%
+    &_conf
+      font-size: 16px
+      line-height: 21px
+      margin-bottom: 40px
+      text-align: center
+      &-label
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: -30px
+          margin-right: 15px
+          width: 20px
+          height: 20px
+          border-radius: 3px
+          border: 1px solid #E4d0ff
+          background-repeat: no-repeat
+          background-position: center center
+          background-size: 70% 70%
+
+    &_button
+      margin-right: auto
+      margin-left: auto
+      height: 50px
+      width: 200px
+      font-size: 18px
+      line-height: 23px
+
+.overlay
+  position: fixed
+  border: none
+  display: block
+  width: 100%
+  top: 0
+  bottom: 0
+  right: 0
+  left: 0
+  overflow: hidden
+  pointer-events: none
+  z-index: 98
+  opacity: 0
+  transition: opacity 0.15s ease
+  background-color: #000
+  &--show
+    pointer-events: auto
+    opacity: 0.6
