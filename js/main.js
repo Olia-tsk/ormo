@@ -54,9 +54,9 @@ $(document).ready(function() {
     $(document).scroll(function() {
       var y = $(this).scrollTop();
       if (y > 900) {
-        $(".to-top").removeClass("to-top--hidden");
+        $(".to-top").addClass("to-top--visible");
     } else {
-      $(".to-top").addClass("to-top--hidden");
+      $(".to-top").removeClass("to-top--visible");
       }
     });
   });

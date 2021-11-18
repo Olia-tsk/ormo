@@ -807,19 +807,20 @@ input, select {
 
 .to-top {
   position: fixed;
-  display: block;
+  display: none;
   right: 20px;
   bottom: 20px;
   z-index: 50;
 }
 
-.to-top--hidden {
-  display: none;
+.to-top--visible {
+  display: block;
 }
 
 .to-top-icon {
   width: 40px;
   height: 40px;
+  opacity: 0.9;
 }
 
 .button:hover {
