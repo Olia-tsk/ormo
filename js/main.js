@@ -8,6 +8,8 @@ $(document).ready(function() {
   // закрыть модальное окно на esc
   $(document).on("keydown", function(e) {
     if (e.keyCode == 27)
+    var modalOverlay = $(".overlay");
+    var modalWindow = $(".modal");
     modalOverlay.removeClass("overlay--show");
     modalWindow.removeClass("modal--active");
     body.removeClass("overflow");
