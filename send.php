@@ -10,4 +10,12 @@ $tel = $_POST['tel'];
 $subjects = $_POST['subject'];
 
 var_dump($_POST);
-echo ($subjects);
+echo "<br>";
+echo "<br>";
+// echo "\nМассив предметов" . ($subjects);
+// var_dump($subjects);
+
+//var_dump($subjects);
+// echo "<br>";
+// echo "<br>";
+foreach ($subjects as $key => $subject) echo $subject . "<br>";
