@@ -205,6 +205,47 @@
       &_img
         width: 230px
         height: 145px
+  .modal
+    &-window
+      width: 70%
+      margin-right: auto
+      margin-left: auto
+    &-header
+      font-size: 18px
+      line-height: 23px
+    &-form
+      &_subjects
+        margin-bottom: 10px
+        &-title
+          font-size: 14px
+          line-height: 18px
+        &-hint
+          font-size: 12px
+          line-height: 16px
+        &-item
+          font-size: 12px
+          line-height: 16px
+      &_subject::before
+        width: 15px
+        height: 15px
+        margin-right: 10px
+      &_conf
+        font-size: 14px
+        line-height: 18px
+        &-label::before
+          left: -25px
+          width: 15px
+          height: 15px
+      &_button
+        height: 40px
+        width: 170px
+  input, select
+    padding: 7px 10px
+    font-size: 12px
+    line-height: 16px
+  input::placeholder
+    font-size: 12px
+    line-height: 16px
 
 @media (max-width: 576px)
   .container
@@ -213,7 +254,6 @@
     width: 91%
   .main
     background-position: center, center
-    //height: 400px
     &-content
       display: flex
       flex-direction: column
@@ -268,6 +308,26 @@
         height: 135px
       &:last-child
         flex-direction: column-reverse
+  .modal
+    &-window
+      width: 75%
+    &-form
+      &_field
+        margin-bottom: 15px
+      &_group
+        flex-direction: column
+      &_item
+        width: 100%
+        margin-bottom: 15px
+      &_subjects
+        &-hint
+          margin-bottom: 15px
+        &-item
+          margin-bottom: 15px
+      &_conf
+        font-size: 12px
+        line-height: 16px
+        margin-bottom: 25px
 
 @media (max-width: 460px)
   h2
@@ -275,7 +335,6 @@
     font-size: 25px
     line-height: 32px
   .main
-    //height: 350px
     &-content
       &_title
         font-size: 30px
@@ -356,6 +415,15 @@
     &-contacts
       font-size: 12px
       line-height: 16px
+  .modal
+    margin-top: 20px
+    &-window
+      width: 85%
+      margin-top: 0
+    &-form
+      &_subjects
+        flex-direction: column
+        flex-wrap: nowrap
 
 @media (max-width: 375px)
   .bonuses
