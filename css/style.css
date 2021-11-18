@@ -805,6 +805,23 @@ input, select {
   margin-right: 10px;
 }
 
+.to-top {
+  position: fixed;
+  display: block;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+}
+
+.to-top--hidden {
+  display: none;
+}
+
+.to-top-icon {
+  width: 40px;
+  height: 40px;
+}
+
 .button:hover {
   background: -webkit-gradient(linear, left bottom, left top, to(#FF5A5A));
   background: linear-gradient(0deg, #FF5A5A 100%);
@@ -1209,6 +1226,10 @@ input, select {
   .order-item_img {
     width: 240px;
     height: 165px;
+  }
+  .to-top-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
