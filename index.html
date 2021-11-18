@@ -57,7 +57,9 @@
             Поступай в университет<br />без экзаменов!
           </h1>
           <p class="main-content_text">Успей подать заявку!</p>
-          <a href="#" class="main-button button">Подать заявку</a>
+          <button data-toggle="modal" class="main-button button">
+            Подать заявку
+          </button>
         </div>
       </div>
     </section>
@@ -224,7 +226,9 @@
 
     <section class="apply">
       <div class="container">
-        <a href="#" class="apply-button button">Подать заявку</a>
+        <button data-toggle="modal" class="apply-button button">
+          Подать заявку
+        </button>
       </div>
     </section>
 
@@ -345,7 +349,7 @@
       </div>
     </footer>
 
-    <div class="modal modal--active" id="applyModal" aria-hidden="true">
+    <div class="modal" id="applyModal" aria-hidden="true">
       <div class="modal-wrap">
         <div class="modal-window" role="dialog" aria-modal="true">
           <a href="#" class="modal-close">
@@ -534,6 +538,9 @@
         </div>
       </div>
     </div>
-    <div class="overlay overlay--show"></div>
+    <div class="overlay"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

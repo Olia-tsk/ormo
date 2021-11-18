@@ -383,7 +383,6 @@ body {
   color: #000;
   font-size: 20px;
   line-height: 26px;
-  overflow: hidden;
 }
 
 p {
@@ -848,6 +847,7 @@ input, select {
           align-items: center;
   z-index: 99;
   margin: 30px 0;
+  visibility: hidden;
 }
 
 .modal--active {
@@ -1059,6 +1059,10 @@ input, select {
 .overlay--show {
   pointer-events: auto;
   opacity: 0.6;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 @media (max-width: 1250px) {
