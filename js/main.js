@@ -77,4 +77,42 @@ $(document).ready(function() {
   })
 
 
+   // валидация формы с номером телефона
+   $(function() {
+ 
+    //Маска для номера телефона
+    $('.modal-form_tel').inputmask({
+      mask: '+9{1,3} (9{2,3}) 9{3}-9{3,4}',
+      // mask: '+7 (999) 999-99-99',
+      showMaskOnHover: true,
+      inputmode: 'tel',
+      onincomplete: function () {
+        checkValue($(this));
+      },
+      oncomplete: function () {
+        checkValue($(this));
+      }
+    });
+   
+    //Функция валидации номера телефона
+    var checkValue = function(input) {
+      var $th = $(input);
+      var phone = $th.val();	//Введенное значение
+      var isValid = Inputmask.isValid(phone , { mask: '+9{1,3} (9{2,3}) 9{3}-9{3,4}'});	//Проверяем на валидность
+      var $btn = $th.closest('#olimp').find('.modal-form_button');	//Ищем кнопку отправки формы
+      var $error = $th.parent().find('.js-warning');	//Ищем ошибку
+   
+      if (!isValid) {
+        //Если не валидно, то:
+        $btn.prop('disabled', true); //Меняем атрибут disabled в значение true (делаем кнопку неактивной)
+        $error.fadeIn(); //Показываем ошибку
+      } else {
+        $btn.prop('disabled', false); //Меняем атрибут disabled в значение false (делаем кнопку активной)
+        $error.fadeOut(); //Скрываем ошибку
+      }
+    }
+   
+  });
+
+
 });

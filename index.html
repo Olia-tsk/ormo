@@ -427,7 +427,18 @@
                 />
               </li>
               <li class="modal-form_item">
-                <input type="tel" placeholder="Телефон*" name="tel" required />
+                <input
+                  class="modal-form_tel"
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон*"
+                  required
+                />
+                <span class="form__warning js-warning">
+                  <span class="form__warning_message"
+                    >Укажите корректный номер телефона</span
+                  >
+                </span>
               </li>
             </ul>
 
@@ -544,6 +555,7 @@
     </a>
 
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.inputmask.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Yandex.Metrika counter -->
