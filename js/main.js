@@ -7,12 +7,13 @@ $(document).ready(function() {
 
   // закрыть модальное окно на esc
   $(document).on("keydown", function(e) {
-    if (e.keyCode == 27)
-    var modalOverlay = $(".overlay");
-    var modalWindow = $(".modal");
-    modalOverlay.removeClass("overlay--show");
-    modalWindow.removeClass("modal--active");
-    body.removeClass("overflow");
+    if (e.keyCode == 27) {
+      var modalOverlay = $(".overlay");
+      var modalWindow = $(".modal");
+      modalOverlay.removeClass("overlay--show");
+      modalWindow.removeClass("modal--active");
+      body.removeClass("overflow");
+    }
   })
 
   // закрыть модальное окно по щелчку вне окна
@@ -60,4 +61,20 @@ $(document).ready(function() {
       }
     });
   });
+
+  $("#olimp").on("submit", function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: '/send.php',
+      method: 'post',
+      data: $('#olimp').serialize()        
+    }).done(function(response) {
+        $('#olimp').parent().append("<div class='response' style='text-align: center'>" + response + "</div>");
+        $('#olimp').fadeOut(400, function () {
+          $('#olimp').parent().find(".response").fadeIn();
+        });
+      });
+  })
+
+
 });
