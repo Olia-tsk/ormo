@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1083,25 +1084,95 @@ input, select {
   overflow: hidden;
 }
 
-.modal-form_item {
+select {
+  padding-left: 10px;
+}
+
+.modal-form_country {
   position: relative;
 }
 
-.form__warning {
+.modal-form_country--hint::before {
+  pointer-events: none;
+  color: #C5C5C5;
+  padding-top: 11px;
+  padding-left: 15px;
+  content: 'Код страны*';
   position: absolute;
-  top: 43px;
-  right: 0;
-  display: none;
-  color: red;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 13px;
+  top: 1px;
+  left: 1px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 74%;
+  height: 53%;
+  border-radius: 3px;
+  background-color: #f7f4fb;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
-.modal-form_button:disabled {
-  opacity: .7;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
+.modal-form_country:focus::before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.modal-form_grade {
+  position: relative;
+}
+
+.modal-form_grade--hint::before {
+  pointer-events: none;
+  color: #C5C5C5;
+  padding-top: 11px;
+  padding-left: 15px;
+  content: 'Класс:';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 74%;
+  height: 53%;
+  border-radius: 3px;
+  background-color: #f7f4fb;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.modal-form_grade:focus::before {
+  content: '';
+  width: 0;
+  height: 0;
+}
+
+.modal-form_part {
+  position: relative;
+}
+
+.modal-form_part--hint::before {
+  pointer-events: none;
+  color: #C5C5C5;
+  padding-top: 11px;
+  padding-left: 15px;
+  content: 'Форма участия:';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  font-size: 16px;
+  line-height: 20px;
+  width: 74%;
+  height: 53%;
+  border-radius: 3px;
+  background-color: #f7f4fb;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.modal-form_part:focus::before {
+  content: '';
+  width: 0;
+  height: 0;
 }
 
 @media (max-width: 1250px) {
@@ -1416,8 +1487,14 @@ input, select {
     font-size: 12px;
     line-height: 16px;
   }
-  .form__warning {
-    top: 31px;
+  .modal-form_country--hint::before, .modal-form_part--hint::before, .modal-form_grade--hint::before {
+    padding-top: 7px;
+    padding-left: 9px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  select {
+    padding-left: 5px;
   }
 }
 

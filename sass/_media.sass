@@ -247,8 +247,16 @@
   input::placeholder
     font-size: 12px
     line-height: 16px
-  .form__warning
-    top: 31px
+  .modal-form
+    &_country, &_part, &_grade
+      &--hint
+        &::before
+          padding-top: 7px
+          padding-left: 9px
+          font-size: 12px
+          line-height: 16px
+  select
+    padding-left: 5px
 
 @media (max-width: 576px)
   .container

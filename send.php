@@ -1,6 +1,6 @@
 <?php
 $name = $_POST['full_name'];
-$country = $_POST['country'];
+$country = $_POST['countries'];
 $city = $_POST['town'];
 $email = $_POST['email'];
 $tel = $_POST['tel'];

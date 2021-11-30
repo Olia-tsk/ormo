@@ -370,22 +370,43 @@
 
             <ul class="modal-form_group">
               <li class="modal-form_item">
-                <select name="country">
-                  <option>Страна:</option>
-                  <option value="1">РФ</option>
-                  <option value="4">Казахстан</option>
-                  <option value="18">Узбекистан</option>
-                  <option value="11">Киргизия</option>
-                  <option value="17">Туркменистан</option>
-                  <option value="16">Таджикистан</option>
-                </select>
-              </li>
-              <li class="modal-form_item">
                 <input
                   type="text"
                   name="town"
                   placeholder="Населённый пункт*"
                   minlength="2"
+                  required
+                />
+              </li>
+              <li
+                class="
+                  modal-form_item modal-form_country modal-form_country--hint
+                "
+              >
+                <select name="countries" required>
+                  <option value="ru">Россия +7</option>
+                  <option value="kz">Казахстан +7</option>
+                  <option value="kg">Кыргызстан +996</option>
+                  <option value="uz">Узбекистан +998</option>
+                  <option value="tg">Таджикистан +992</option>
+                  <option value="tr">Туркменистан +993</option>
+                  <option value="other">Другая</option>
+                </select>
+              </li>
+              <li class="modal-form_item">
+                <input
+                  class="modal-form_tel"
+                  type="tel"
+                  name="tel"
+                  placeholder="Телефон*"
+                  required
+                />
+              </li>
+              <li class="modal-form_item">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Эл.почта*"
                   required
                 />
               </li>
@@ -402,43 +423,21 @@
             </p>
 
             <ul class="modal-form_group">
-              <li class="modal-form_item">
+              <li
+                class="modal-form_item modal-form_grade modal-form_grade--hint"
+              >
                 <select name="grade">
-                  <option>Класс:</option>
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
                   <option value="11">11</option>
                 </select>
               </li>
-              <li class="modal-form_item">
+              <li class="modal-form_item modal-form_part modal-form_part--hint">
                 <select name="participation_form">
-                  <option>Форма участия:</option>
                   <option value="очно">очно</option>
                   <option value="дистанционно">дистанционно</option>
                 </select>
-              </li>
-              <li class="modal-form_item">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Эл.почта*"
-                  required
-                />
-              </li>
-              <li class="modal-form_item">
-                <input
-                  class="modal-form_tel"
-                  type="tel"
-                  name="tel"
-                  placeholder="Телефон*"
-                  required
-                />
-                <span class="form__warning js-warning">
-                  <span class="form__warning_message"
-                    >Укажите корректный номер телефона</span
-                  >
-                </span>
               </li>
             </ul>
 
@@ -555,7 +554,7 @@
     </a>
 
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Yandex.Metrika counter -->
